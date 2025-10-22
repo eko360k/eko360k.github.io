@@ -4,9 +4,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 /* Hero Section Gradient */
