@@ -1,6 +1,10 @@
 :root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
+    --primary-color: #007BFF;
+    --secondary-color: #6C63FF;
+    --accent-color: #FF6F61;
+    --neutral-base: #F8F9FA;
+    --gradient-primary: linear-gradient(135deg, #007BFF 0%, #0066CC 100%);
+    --gradient-accent: linear-gradient(45deg, #6C63FF 0%, #FF6F61 100%);
 }
 
 body {
@@ -19,9 +23,50 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* Hero Section Gradient */
+/* Section Backgrounds */
 .bg-light {
-    background: linear-gradient(135deg, rgba(13,110,253,0.1) 0%, rgba(255,255,255,1) 100%) !important;
+    background: var(--neutral-base);
+}
+
+/* Gradient Enhancements */
+.gradient-section {
+    background: linear-gradient(135deg, rgba(248,249,250,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* Button Gradients */
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Accent Highlights */
+.highlight {
+    color: var(--accent-color);
+}
+
+/* Timeline Color Update */
+.timeline-line {
+    background: var(--secondary-color);
+}
+
+.timeline-icon {
+    background: var(--gradient-accent);
 }
 
  .profile-img {
@@ -58,8 +103,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--gradient-primary);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-outline-secondary {
